@@ -1,0 +1,267 @@
+/*GENERAL*/
+body{
+	font: normal 16px/30px 'Source Sans Pro','Font Awesome\ 5 Free', sans-serif;
+	/*TOTO aby bol obrazok na celej stranke, stranka dimension*/
+/* 	background:linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) ), url('../img/background.jpg') no-repeat;
+ */	background: url('../img/background.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	color: #000;
+
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: center;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group{
+	*zoom: 1;
+}
+
+
+/*HEADER*/
+
+header {
+	width: 1160px;
+	margin: 0 auto;
+	background-color: rgba(238, 238, 238, 0.8);
+}
+
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	width: 100%;
+	height: 2.815em; /*45px*/
+}
+
+.nav-bar {
+	font-size: 0;
+}
+
+ul li {
+	display: inline-block;
+	text-align: center;
+	height: 100%;
+}
+
+.nav-bar > li{
+	background-color: rgba(238, 238, 238, 0.8);
+	font-size: 16px;
+	height: 2.815em;
+	transition: all ease 1.5s;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+	width: 100%;
+}
+
+
+.link{
+	width: 15%;
+	border-left: solid rgba(155, 143, 135, 0.5) 2px;
+}
+
+li:nth-child(6){
+	width: 5%;
+	border-right: solid rgba(155, 143, 135, 0.5) 2px;
+}
+
+.link a,
+.header-a a {
+	margin-top: 6px;
+	height: calc(100% - 5px);
+}
+
+
+.header-a {
+	width: calc(17% - 5px);
+}
+
+/* * {
+	outline: solid black 2px;
+}
+ */
+
+/*MAIN*/
+main {
+	width: 960px;
+	margin: 90px auto 0 auto;
+	background-color: rgba(238, 238, 238, 0.8);
+	font-size: 24px;
+
+
+}
+
+.categories-wrapper {
+	width: 100%;
+	font-size: 24px;
+	height: 2em;
+	border-bottom: solid rgba(155, 143, 135, 0.5) 2px;
+}
+
+.categories {
+	width: 100%;
+	font-size: 0px;
+
+}
+
+.category {
+	font-size: 24px;
+	height: 2em;
+	width: 25%;
+	border-right: solid rgba(155, 143, 135, 0.5) 2px;
+	transition: all ease 1s;
+}
+
+
+
+.category:last-child {
+	border-right: none;
+	
+}
+
+.category > a {
+	height: 100%;
+	margin-top: 0;
+	line-height: 2em;
+} 
+
+.link:hover,
+.category:hover,
+.header-a:hover {
+	background-color: #8e7f78;
+	color: #dbd8d7;
+	transition: all ease 1s;
+}
+
+.link.selected {
+	background-color: #8e7f78;
+	color: #dbd8d7;
+}
+
+/*About*/
+.about-p,
+.contact-p,
+.rules-p {
+	padding: 1em 2em;
+	font-size: 20px;
+}
+
+/*Banner*/
+.banner-commercial {
+	width: 100%;
+	height: 160px;
+}
+
+/*PreFOOTER*/
+.pre-footer {
+	width: 960px;
+	margin: 30px auto;
+}
+
+.socials {
+	width: 100%;
+	font-size: 0;
+}
+
+.social-icon {
+	font-size: 24px;
+	width: 25%;
+}
+
+.social-icon > a  {
+	width: 2.75em;
+	height: 2.75em;
+	border-radius: 2.75em;
+	transition: all ease 0.8s;
+}
+
+.social-icon > a > i:before {
+	box-shadow: inset 0 0 0 2px  rgba(0, 0, 0, 0.2);
+	border-radius: 2.75em;
+	display: inline-block;
+	height: 2.75em;
+	line-height: 2.75em;
+	width: 2.75em;
+}
+
+.social-icon > a:hover {
+	background-color: #dad8d8;
+	color: #8b7c75;
+	transition: all ease 0.8s;
+
+}
+
+/*FOOTER*/
+footer {
+	width: 960px;
+	margin: 100px auto 0;
+	background-color: rgba(238, 238, 238, 0.8);
+	font-size: 16px;
+	height: 140px;
+}
+
+.bottom-info {
+	font-size: 0;
+	height: 140px;
+}
+
+.bottom-info-part {
+	font-size: 16px;
+	width: 25%;
+	height: 100%;
+	line-height: 1.5em;
+	text-align: left;
+	vertical-align: top;
+	padding: 10px 0 10px 20px;
+	border-right: solid rgba(155, 143, 135, 0.5) 2px;
+}
+
+.bottom-info-part > ul > li {
+	display: block;
+	height: 1.2em;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
