@@ -16,12 +16,23 @@
 		<nav>
 			<ul class="nav-bar">
 				<li class="header-a"><a href="index.html" id="logo" >LOGO</a></li>
-				<li class="link"><a href="about.html" >O nás</a></li>
-				<li class="link selected"><a href="contact.html" >Kontakt</a></li>
-				<li class="link"><a href="rules.html" >Obch. podmienky</a></li>
-				<li class="link"><a href="kosik.html" >Košík</a></li>
-				<li class="link"><a href="#" ><i class="fas fa-search"></i></a></li>
+				
+				<li class="link ls"><a href="about.html" >O nás</a></li>
+				<li class="link ls selected"><a href="contact.html" >Kontakt</a></li>
+				<li class="link ls"><a href="rules.html" >O. podmienky</a></li>
+				<li class="link">
+					<a href="#" id="search-button"><i class="fas fa-search"></i></a>
+					<form id="search" method="get" action="#">
+						<input type="text" id="search-input" name="query" placeholder="Search" />
+					</form>	
+				</li>
+
+				<li class="basket">
+					<a href="kosik.html" id="basket" ><i class="fas fa-shopping-basket"></i></a>
+				</li>
+				
 				<li class="header-a"><a href="#" id="login" >LOGIN</a></li>
+				
 			</ul>			
 		</nav>	
 	</header>
