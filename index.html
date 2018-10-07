@@ -119,7 +119,7 @@
 	</footer>
 
 <!-- login -->
-	<article class="login">
+	<article class="login invisible">
 		<div class="exit-wrapper">
 			<a href="index.html" class="exit">&times;</a>
 		</div>
@@ -127,12 +127,12 @@
 		<form action="" class="login-form">
 			<div class="wrapper-login">
 				<label for="name">Meno</label>
-				<input type="text" name="name" id="name" placeholder="Meno">
+				<input type="text" name="name" id="name" class="text-field" placeholder="Meno">
 			</div>
 			
 			<div class="wrapper-login">
 				<label for="pass">Heslo</label>
-				<input type="text" name="pass" id="pass" placeholder="Heslo">
+				<input type="text" name="pass" id="pass" class="text-field" placeholder="Heslo">
 			</div>
 			
 			<div class="wrapper-submit">
@@ -142,6 +142,70 @@
 			<div class="wrapper-submit">
 				<a href="" class="registrate">Registrácia</a>
 			</div>
+			
+		</form>
+	</article>
+
+<!-- Registration -->
+	<article class="registration invisible">
+		<div class="exit-wrapper">
+			<a href="index.html" class="exit">&times;</a>
+		</div>
+		<h2 class="article-headline">Registrácia</h2>
+
+		<form action="" class="registration-form">
+			<h2 class="article-small-headline">Osobné údaje</h2>
+			<div class="wrapper-registration">
+				<!-- <label for="first-name">Meno</label> -->
+				<input type="text" name="first-name" id="first-name" class="text-field" placeholder="Meno">
+			</div>
+			
+			<div class="wrapper-registration">
+				<!-- <label for="second-name">Priezvisko</label> -->
+				<input type="text" name="second-name" id="second-name" class="text-field" placeholder="Priezvisko">
+			</div>
+
+			<div class="wrapper-registration">
+				<!-- <label for="pass">Heslo</label> -->
+				<input type="password" name="pass" id="password" class="text-field" placeholder="Heslo">
+			</div>
+
+			<h2 class="article-small-headline">Kontaktné údaje</h2>
+			<div class="wrapper-registration">
+				<!-- <label for="email">Email</label> -->
+				<input type="email" name="email" id="email" class="text-field" placeholder="E-mail">
+			</div>
+
+			<div class="wrapper-registration">
+				<!-- <label for="phone">Telefón</label> -->
+				<input type="text" name="phone" id="phone" class="text-field" placeholder="Telefónne číslo">
+			</div>
+			
+			<h2 class="article-small-headline">Adresa</h2>
+			<div class="wrapper-registration-large">
+				<!-- <label for="street">Ulica</label> -->
+				<input type="text" name="street" id="street" class="text-field" placeholder="Ulica">
+			</div>
+
+			<div class="wrapper-registration-short">
+				<!-- <label for="house-number">Číslo</label> -->
+				<input type="text" name="house-number" id="house-number" class="text-field" placeholder="Č. domu">
+			</div>
+
+			<div class="wrapper-registration-large">
+				<!-- <label for="city">Mesto</label> -->
+				<input type="text" name="city" id="city" class="text-field" placeholder="Mesto">
+			</div>
+
+			<div class="wrapper-registration-short">
+				<!-- <label for="psc">PSČ</label> -->
+				<input type="text" name="psc" id="psc" class="text-field" placeholder="PSČ">
+			</div>
+			
+			<div class="wrapper-submit">
+				<input type="submit" id="registrate-button" value="Registrovať">
+			</div>
+
 			
 		</form>
 	</article>

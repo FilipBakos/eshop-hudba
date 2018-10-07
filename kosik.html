@@ -12,7 +12,7 @@
 	
 </head>
 <body>
-	<header>
+	<header class="behind">
 		<nav>
 			<ul class="nav-bar">
 				<li class="header-a"><a href="index.html" id="logo" >LOGO</a></li>
@@ -27,17 +27,17 @@
 					</form>	
 				</li>
 
-				<li class="basket selected">
+				<li class="basket">
 					<a href="kosik.html" id="basket" ><i class="fas fa-shopping-basket"></i></a>
 				</li>
 				
-				<li class="header-a"><a href="#" id="login" >LOGIN</a></li>
+				<li class="header-a" id="login-button"><a href="#"  >LOGIN</a></li>
 				
 			</ul>			
 		</nav>	
 	</header>
 
-	<main>
+	<main  class="behind">
 		<div class="categories-wrapper">
 			<ul class="categories">
 				<li class="category"><a href="#">CD</a></li>
@@ -56,7 +56,7 @@
 	</main>
 
 
-	<div class="pre-footer">
+	<div class="pre-footer behind">
 		<ul class="socials">
 			<li class="social-icon">
 				<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -73,7 +73,7 @@
 		</ul>
 	</div>
 
-	<footer>
+	<footer  class="behind">
 		<div class="footer-wrapper">
 			<ul class="bottom-info">
 
@@ -117,6 +117,98 @@
 		</div>
 		
 	</footer>
+
+	<!-- login -->
+	<article class="login invisible">
+		<div class="exit-wrapper">
+			<a href="index.html" class="exit">&times;</a>
+		</div>
+		<h2 class="article-headline">Prihlásenie</h2>
+		<form action="" class="login-form">
+			<div class="wrapper-login">
+				<label for="name">Meno</label>
+				<input type="text" name="name" id="name" class="text-field" placeholder="Meno">
+			</div>
+			
+			<div class="wrapper-login">
+				<label for="pass">Heslo</label>
+				<input type="text" name="pass" id="pass" class="text-field" placeholder="Heslo">
+			</div>
+			
+			<div class="wrapper-submit">
+				<input type="submit" value="Prihlásiť">
+			</div>
+
+			<div class="wrapper-submit">
+				<a href="" class="registrate">Registrácia</a>
+			</div>
+			
+		</form>
+	</article>
+
+<!-- Registration -->
+	<article class="registration invisible">
+		<div class="exit-wrapper">
+			<a href="index.html" class="exit">&times;</a>
+		</div>
+		<h2 class="article-headline">Registrácia</h2>
+
+		<form action="" class="registration-form">
+			<h2 class="article-small-headline">Osobné údaje</h2>
+			<div class="wrapper-registration">
+				<!-- <label for="first-name">Meno</label> -->
+				<input type="text" name="first-name" id="first-name" class="text-field" placeholder="Meno">
+			</div>
+			
+			<div class="wrapper-registration">
+				<!-- <label for="second-name">Priezvisko</label> -->
+				<input type="text" name="second-name" id="second-name" class="text-field" placeholder="Priezvisko">
+			</div>
+
+			<div class="wrapper-registration">
+				<!-- <label for="pass">Heslo</label> -->
+				<input type="password" name="pass" id="password" class="text-field" placeholder="Heslo">
+			</div>
+
+			<h2 class="article-small-headline">Kontaktné údaje</h2>
+			<div class="wrapper-registration">
+				<!-- <label for="email">Email</label> -->
+				<input type="email" name="email" id="email" class="text-field" placeholder="E-mail">
+			</div>
+
+			<div class="wrapper-registration">
+				<!-- <label for="phone">Telefón</label> -->
+				<input type="text" name="phone" id="phone" class="text-field" placeholder="Telefónne číslo">
+			</div>
+			
+			<h2 class="article-small-headline">Adresa</h2>
+			<div class="wrapper-registration-large">
+				<!-- <label for="street">Ulica</label> -->
+				<input type="text" name="street" id="street" class="text-field" placeholder="Ulica">
+			</div>
+
+			<div class="wrapper-registration-short">
+				<!-- <label for="house-number">Číslo</label> -->
+				<input type="text" name="house-number" id="house-number" class="text-field" placeholder="Č. domu">
+			</div>
+
+			<div class="wrapper-registration-large">
+				<!-- <label for="city">Mesto</label> -->
+				<input type="text" name="city" id="city" class="text-field" placeholder="Mesto">
+			</div>
+
+			<div class="wrapper-registration-short">
+				<!-- <label for="psc">PSČ</label> -->
+				<input type="text" name="psc" id="psc" class="text-field" placeholder="PSČ">
+			</div>
+			
+			<div class="wrapper-submit">
+				<input type="submit" id="registrate-button" value="Registrovať">
+			</div>
+
+			
+		</form>
+	</article>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script src="js/script.js"></script>

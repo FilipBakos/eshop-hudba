@@ -42,30 +42,57 @@ $searchInput
 		}, 100);
 	});
 	
+/*REGISTRATION, LOGIN*/
+var $exit = $('.exit');
+var $behind = $('.behind');
 var $login = $('#login-button');
+var $loginWrap = $('.login');
+var $registrate = $('.registrate');
+var $registrationWrap = $('.registration');
+var $registrate = $('.registrate');
 
 $login.on('click', function(event) {
 	event.preventDefault();
-	$('.behind').fadeTo("slow",0);
-	$('.behind').addClass('invisible');
+	$behind.fadeTo("slow",0);
+	$behind.addClass('invisible');
 
-	$('.login').removeClass('invisible');
-	$('.login').fadeTo("slow",1);
+	$loginWrap.removeClass('invisible');
+	$loginWrap.fadeTo("slow",1);
 	
 });
 
+$registrate.on('click', function(event) {
+	event.preventDefault();
+	$loginWrap.fadeTo("slow",0);
+	$loginWrap.addClass('invisible');
 
-var $exit = $('.exit');
+	$registrationWrap.removeClass('invisible');
+	$registrationWrap.fadeTo("slow",1);
+});
 
 $exit.on('click', function(event) {
 	event.preventDefault();
-	$('.behind').removeClass('invisible');
-	$('.behind').fadeTo("slow",1);
-	$('.login').fadeTo("slow",0);
-	$('.login').addClass('invisible');
+	$behind.removeClass('invisible');
+	$behind.fadeTo("slow",1);
 
+	if(!$loginWrap.hasClass('invisible')) {
+		$loginWrap.fadeTo("slow",0);
+		$loginWrap.addClass('invisible');
+	}
+
+	if(!$registrationWrap.hasClass('invisible')) {
+		$registrationWrap.fadeTo("slow",0);
+		$registrationWrap.addClass('invisible');
+	}
 	
+
 });
+
+
+
+
+
+
 
 
 
