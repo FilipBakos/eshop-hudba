@@ -40,6 +40,14 @@ img {
 	*zoom: 1;
 }
 
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 
 /*HEADER*/
 
@@ -327,6 +335,125 @@ main {
 	border-radius: 50%;
 }
 
+.pageing {
+	text-align: center;
+	font-size: 16px;
+	line-height: 3em;
+}
+
+.pageing a {
+	display: inline-block;
+	width: 5%;
+}
+
+/*Detail*/
+.product-img {
+	width: 50%;
+	padding: 2em;
+}
+
+.product-info-wrapper {
+	width: 50%;
+	padding: 5%;
+}
+
+.artist-name-detail {
+	font-weight: 400;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.album-name-detail {
+	font-weight: 400;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.price-detail {
+	margin-top: 70px;
+}
+
+.add-to-basket {
+	width: 80%;
+	border: solid 2px #8e7f78;
+	border-radius: 5px;
+	margin-top: 55px;
+	padding: 5px;
+}
+
+label[for="number-of-products"]{
+	width: 10%;
+	text-transform: none;
+	display: inline-block;
+}
+
+input[name="number-of-products"]{
+	width: 15%;
+	padding-left: 5px;
+	background-color: #d7d5d4;
+	border: solid 2px #8e7f78;
+	border-radius: 5px;
+	color: #666; 
+
+}
+
+.button-add {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	background-color: #bbb5b3;
+	border: solid #bbb5b3 2px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: 600;
+	transition: background-color ease 0.8s;
+
+}
+
+
+.button-add:hover {
+	background-color: #aba4a1;
+	transition: background-color ease 0.8s;
+}
+.back-button {
+	position: relative;
+	top: 15px;
+	left: 15px;
+
+	text-align: center;
+	width: 10%;
+	background-color: #bbb5b3;
+	border: solid #bbb5b3 2px;
+	border-radius: 5px;
+	font-size: 0.6em;
+	font-weight: 600;
+	transition: background-color ease 0.8s;
+}
+
+.back-button:hover {
+	background-color: #aba4a1;
+	transition: background-color ease 0.8s;
+}
+
+.tracks {
+	padding-left: 5em;
+	padding-bottom: 2em;
+}
+
+.tracks>h3 {
+	font-size: 1.2em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
 /*PreFOOTER*/
 .pre-footer {
 	width: 960px;
@@ -396,6 +523,8 @@ footer {
 	height: 1.2em;
 	text-align: left;
 }
+
+
 
 /*ARTICLES*/
 
