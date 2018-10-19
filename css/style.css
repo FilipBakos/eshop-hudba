@@ -199,7 +199,7 @@ main {
 	margin: 90px auto 0 auto;
 	background-color: rgba(238, 238, 238, 0.8);
 	font-size: 24px;
-
+	min-height: calc(100vh - 250px);
 
 }
 
@@ -285,13 +285,27 @@ main {
 
 }
 
-.product {
+.products-3{
+	width: 75%;
+	font-size: 0;
+	display: inline-block;
+
+}
+
+
+
+.product,
+.product-3 {
 	font-size: 16px;
 	display: inline-block;
 	width: 25%;
 	text-align: center;
 	padding: 1em;
 	border: solid #c0bab6 2px;
+}
+
+.product-3 {
+	width: 33.33%;
 }
 
 .artist-name {
@@ -309,7 +323,8 @@ main {
 	font-size: 1.2em;
 }
 
-.detail-button {
+.detail-button,
+.search-button {
 	width: 40%;
 	text-transform: uppercase;
 	background-color: #bbb5b3;
@@ -320,7 +335,17 @@ main {
 	
 }
 
-.detail-button:hover {
+.search-button {
+	width: 80%;
+	margin-top: 20px;
+	font-size: 0.9em;
+	line-height: 2em;
+}
+
+
+
+.detail-button:hover,
+.search-button:hover {
 	background-color: #aba4a1;
 	transition: background-color ease 0.8s;
 }
@@ -599,7 +624,7 @@ label {
 	text-align: right;
 }
 
-input[type="submit"] {
+.login-button {
 	margin-top: 20px;
 	margin-bottom: 15px;
 	width: 20%;
@@ -614,7 +639,7 @@ input[type="submit"] {
 	transition: background-color ease 0.8s;
 }
 
-input[type="submit"]:hover {
+.login-button:hover {
 	background-color: #b5b2b0;
 	transition: background-color ease 0.8s;
 }
@@ -670,6 +695,8 @@ input[type="submit"]:hover {
 	margin-bottom: 15px;
 }
 
+
+
 .article-small-headline {
 	font-size: 1.5em;
 	font-weight: 400;
@@ -708,6 +735,16 @@ input[type="submit"]:hover {
 	transition: background-color ease 0.8s;
 }
 
+.wrapper-registration-short label,
+.wrapper-registration-large label {
+	text-align: left;
+}
+
+.wrapper-registration-short input,
+.wrapper-registration-large input {
+	margin-top: 5px;
+}
+
 .exit-wrapper {
 	display: inline-block;
 	margin-top: 1vh;
@@ -729,8 +766,258 @@ input[type="submit"]:hover {
 	transition: color ease 0.8s;
 }
 
+/*CD*/
+.basic-filter {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.basic-filter * {
+	display: inline-block;
+}
+
+.basic-filter-part {
+	width: 24.5%;
+	text-align: center;
+}
+
+.filter {
+	display: inline-block;
+	width: 24%;
+	padding-left: 15px;
+}
+
+.filter-part {
+	border: solid #c0bab6 2px;
+	border-bottom: none;
+	padding: 0 10px 10px;
+}
+
+.filter-part:nth-child(4) {
+
+	border-bottom:solid #c0bab6 2px;
+
+}
+
+.filter-part > input[type="checkbox"]{
+	width: 10%;
+}
+
+.big-label {
+	width: 85%;
+}
+
+.filter-part > input,
+.filter-part > label {
+	display: inline-block;
+}
 
 
+.small-label {
+	width: 50%;
+}
+
+.filter-part > input[type="number"]{
+	width: 45%;
+}
+
+input[type="checkbox"] {
+	background-color: #b5b2b0;
+}
+
+
+
+
+/*BASKET*/
+
+.basket-wrapper {
+	width: 95%;
+	margin: 50px auto 25px;
+	font-size: 20px;
+}
+
+
+
+.basket-part {
+	width: 100%;
+	margin: 25px 0;
+	padding-bottom: 15px;
+	border-bottom: solid #c0bab6 2px;
+}
+
+.basket-headline {
+	font-size: 1.2em;
+	margin: 40px 20px;
+}
+
+.basket-part > * {
+	display: inline-block;
+}
+
+.basket-img {
+	width: 20%;
+}
+
+.basket-part-detail {
+	width: 40%;
+	vertical-align: top;
+
+}
+
+.basket-part-detail > .artist-name-detail,
+.basket-part-detail > .album-name-detail,
+.basket-part-detail > .price-detail {
+	margin: 25px;
+}
+
+.basket-part-number {
+	width: 10%;
+	vertical-align: top;
+}
+
+.basket-part-buttons {
+	vertical-align: top;
+	padding-left: 25px;
+	text-align: right;
+	width: calc(100% - 25% - 40% - 10% - 2%);
+}
+
+.basket-part-button {
+	width: 100%;
+	margin-top: 24px;
+	text-align: center;
+
+	background-color: #bbb5b3;
+	border: solid #bbb5b3 2px;
+	border-radius: 5px;
+	transition: background-color ease 0.8s;
+}
+
+.basket-part-button:nth-child(2) {
+	width: 65%;
+}
+
+
+.basket-button {
+	width: 25%;
+	position: relative;
+	left: 70%; 
+
+
+	font-size: 1.1em;
+	line-height: 1.6em;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	margin: 50px 50px 50px 0;
+	background-color: #bbb5b3;
+	border: solid #bbb5b3 2px;
+	border-radius: 5px;
+	transition: background-color ease 0.8s;
+}
+
+/*ORDER*/
+
+.order-headline{
+	
+	display: inline-block;
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+}
+
+.order-form {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.wrapper-order{
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	
+	margin-bottom: 15px;
+}
+
+.wrapper-order-large {
+	display: inline-block;
+	width: 65%;
+	padding-right: 3%;
+}
+
+.wrapper-order-short {
+	display: inline-block;
+	width: calc( 100% - 65.8% );
+}
+
+.wrapper-submit-order {
+	width: 100%;
+	text-align: right;
+}
+
+.methods-button {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	background-color: #887a71;
+	height: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color ease 0.8s;
+}
+
+.methods-button:hover {
+	background-color: #b5b2b0;
+	transition: background-color ease 0.8s;
+}
+
+/*payment method*/
+.method-headline {
+	display: inline-block;
+	font-weight: 400;
+	width: 100%;
+}
+
+.method-headline::after {
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid black;
+    width: calc(100% - 255px);
+    margin: 0 5px;
+    transform: translateY(-5px);
+
+}
+
+.part {
+	width: 100%;
+	line-height: 2em;
+}
+
+.part *{
+	display: inline-block;
+}
+
+.part input {
+	width: 5%;
+}
+
+.part label {
+	width: 70%;
+}
+
+.part img {
+	width: 5%;
+	vertical-align: middle;
+}
+
+.part p {
+	margin-left: 3%;
+	width: 15%;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width:1200px) {
@@ -749,6 +1036,23 @@ input[type="submit"]:hover {
 	main {
 		width: 860px;
 	}
+
+	.detail {
+		font-size: 16px;
+	}
+
+	.back-button{
+		font-size: 17px;
+	}
+
+	.artist-name-detail {
+		margin: 10px 0 ;
+	}
+	.album-name-detail {
+		margin: 10px 0 ;
+	}
+
+
 
 	.product {
 		width: 33.3333%;
@@ -799,6 +1103,7 @@ input[type="submit"]:hover {
 
 	main {
 		width: 95%;
+		min-width: 360px;
 	}
 
 	.category,
@@ -811,8 +1116,9 @@ input[type="submit"]:hover {
 		font-size: 14px;
 	}
 
-	.login {
-		width: 460px;
+	.login,
+	.registration {
+		width: 80%;
 		margin: 10vh auto;
 	}
 	
@@ -834,9 +1140,21 @@ input[type="submit"]:hover {
 		width: 30%;
 	}
 
-	.registration {
-		width: 460px;
+	.artist-name-detail,
+	.album-name-detail {
+		margin: 1% 0 ;
 	}
+
+	.price-detail {
+		margin: 10% 0 ;
+	}
+
+	input[name="number-of-products"] {
+		width: 40px;
+	}
+	
+
+	
 
 }
 
@@ -896,6 +1214,30 @@ input[type="submit"]:hover {
 	.social-icon {
 		font-size: 16px;
 	}
+
+	.product-img {
+		float: none;
+		width: 100%;
+	}
+
+	.product-info-wrapper {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.add-to-basket {
+		display: inline-block;
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.button-add {
+		display: inline-block;
+		width: 70%;
+		margin-bottom:10px ;
+	}
+
 }
 
 @media screen and (max-width:630px) {
@@ -913,8 +1255,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 520px) {
-	.login {
-		width: 340px;
+	.login,
+	.registration {
+		width: 90%;
 		margin: 2vh auto;
 	}
 	
@@ -940,9 +1283,6 @@ input[type="submit"]:hover {
 		width: 50%;
 	}
 
-	.registration {
-		width: 340px;
-	}
 
 
 	.wrapper-registration-large {
@@ -963,7 +1303,18 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 430px) {
-	
+	.login,
+	.registration {
+		width: 100%;
+		height: 100vh;
+		margin: 0;
+		min-width: 360px;
+	}
+
+	.registration {
+		height: auto;
+	}
+
 	.product{
 		width: 100%;
 	}

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Eshop-Uvod</title>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -41,21 +40,91 @@
 	<main class="behind">
 		<div class="categories-wrapper">
 			<ul class="categories">
-				<li class="category"><a href="CD.html">CD</a></li>
-				<li class="category"><a href="CD.html">DVD</a></li>
-				<li class="category"><a href="CD.html">LP</a></li>
-				<li class="category"><a href="CD.html">Artist</a></li>
+				<li class="category"><a href="#">CD</a></li>
+				<li class="category"><a href="#">DVD</a></li>
+				<li class="category"><a href="#">LP</a></li>
+				<li class="category"><a href="#">Artist</a></li>
 			</ul>
 		</div>
 
 		
 
-		<div class="banner-commercial">
-			<h3 class="banner">BANNER</h3>
-		</div>
+		<form action="#" class="basic-filter">
+			<div class="basic-filter-part">
+				<input type="checkbox" value="1" id="all">
+				<label for="all">Všetko</label>
+			</div>
+			
+			<div class="basic-filter-part">
+				<input type="checkbox" value="2" id="offer">
+				<label for="offer">Akcia</label>
+			</div>
+			
+			<div class="basic-filter-part">
+				<input type="checkbox" value="3" id="new">
+				<label for="new">Novinky</label>
+			</div>
+			
+			<div class="basic-filter-part">
+				<input type="checkbox" value="4" id="sklad">
+				<label for="sklad">Na sklade</label>
+			</div>
+			
+		</form>
+		
 
-		<div class="products-4">
-			<div class="product">
+		<div class="group">
+			<form action="#" class="filter float-left">
+				<div class="filter-part">
+					<h3 class="filter-headline">Žáner</h3>
+					
+					<input type="checkbox" value="1" id="rock">
+					<label class="big-label" for="rock">Rock</label>
+					
+					<input type="checkbox" value="2" id="punk">
+					<label class="big-label" for="punk">Punk</label>
+					
+					<input type="checkbox" value="3" id="pop">
+					<label class="big-label" for="pop">Pop</label>
+					
+					<input type="checkbox" value="4" id="disco">
+					<label class="big-label" for="disco">Disco</label>
+				</div>
+
+				<div class="filter-part">
+					<h3 class="filter-headline">Artist</h3>
+					<input type="checkbox" value="1" id="linkin-park">
+					<label class="big-label" for="linkin-park">Linkin Park</label>
+					<input type="checkbox" value="2" id="billy-talent">
+					<label class="big-label" for="billy-talent">Billy Talent</label>
+					<input type="checkbox" value="3" id="acdc">
+					<label class="big-label" for="acdc">ACDC</label>
+					<input type="checkbox" value="4" id="sum-41">
+					<label class="big-label" for="sum-41">Sum 41</label>
+				</div>
+
+				<div class="filter-part">
+					<h3 class="filter-headline">Rok</h3>
+					<label class="small-label" for="from">Od</label>
+					<input type="number" value="2000" min="1900" max="2018" id="from">
+					<label class="small-label" for="to">Do</label>
+					<input type="number" value="2018" min="1900" max="2018" id="to">
+				</div>
+
+				<div class="filter-part">
+					<h3 class="filter-headline">Cena</h3>
+					<label class="small-label" for="from">Od</label>
+					<input type="number" value="0" min="0" max="150" id="from">
+					<label class="small-label" for="to">Do</label>
+					<input type="number" value="150" min="0" max="150" id="to">
+				</div>
+
+				<input type="submit" class="search-button" value="Hľadaj">
+			</form>
+
+
+		<div class="products-3 float-right">
+			<div class="product-3">
 				<img  src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
@@ -63,7 +132,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-meteora.jpg" alt="LP Meteora">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">Meteora</h2>
@@ -71,7 +140,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-one-more-light.jpg" alt="LP One More Light">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">One More Light</h2>
@@ -79,7 +148,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
@@ -87,7 +156,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
@@ -95,7 +164,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-meteora.jpg" alt="LP Meteora">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">Meteora</h2>
@@ -103,7 +172,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-one-more-light.jpg" alt="LP One More Light">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">One More Light</h2>
@@ -111,14 +180,14 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
 				<h2 class="price">15,99 € <span class="badge">CD</span></h2>
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
@@ -126,7 +195,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-meteora.jpg" alt="LP Meteora">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">Meteora</h2>
@@ -134,7 +203,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-one-more-light.jpg" alt="LP One More Light">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">One More Light</h2>
@@ -142,7 +211,7 @@
 				<a href="detail.html" class="detail-button">detail</a>
 			</div>
 
-			<div class="product">
+			<div class="product-3">
 				<img src="img/linkin-park-hybrid-theory.jpg" alt="LP Hybrid Theory">
 				<h2 class="artist-name">linkin park</h2>
 				<h2 class="album-name">hybrid theory</h2>
@@ -160,6 +229,8 @@
 				<a href="?query=asdasd">>></a>				
 			</div>		
 		</div>
+		</div>
+		
 		
 	</main>
 
