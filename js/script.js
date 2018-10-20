@@ -88,6 +88,30 @@ $exit.on('click', function(event) {
 
 });
 
+/*FILTER*/
+
+$filterButton = $('.filter-button');
+$filterSearchButton = $('.search-button');
+$filter = $('.filter');
+
+$filterButton.on('click', function(event) {
+	event.preventDefault();
+	if(!$filter.hasClass('visible1')) {
+		$filter.addClass('visible1');
+		$filterButton.text('zavrieť filter');
+	} else  {
+		$filter.removeClass('visible1');
+		$filterButton.text('Filter');
+	}
+	
+});
+
+
+$filterSearchButton.on('click', function(event) {
+	event.preventDefault();
+	$filter.removeClass('visible1');
+});
+
 
 
 
