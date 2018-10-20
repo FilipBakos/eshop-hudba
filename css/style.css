@@ -267,7 +267,7 @@ main {
 /*Banner*/
 .banner-commercial {
 	width: 100%;
-	height: 160px;
+	height: 100%;
 	text-align: center;
 	background-color: #d3cfce;
 	line-height: 160px;
@@ -278,6 +278,13 @@ main {
 	font-size: 2em;
 }
 
+.banner-img {
+	width: 960px;
+	height: 350px;
+	position: absolute;
+	top: 138px;
+	left: calc(50% - 480px);
+}
 /*Products*/
 .products-4{
 	width: 100%;
@@ -646,10 +653,10 @@ label {
 
 .registrate {
 	display: inline-block;
-	padding-right: 2.8%;
+	text-align: center;
+	padding:0 0.5em;
 	margin-bottom: 40px;
 	font-size: 1em;
-	width: 20%;
 	border: solid #887a71 2px;
 	border-radius: 5px;
 	padding-bottom: 0;
@@ -720,7 +727,6 @@ label {
 
 .registrate {
 	display: inline-block;
-	padding-right: 2.8%;
 	margin-bottom: 40px;
 	font-size: 1em;
 	width: 20%;
@@ -1121,6 +1127,8 @@ span {
 	}
 
 	
+
+	
 }
 
 @media screen and (max-width:960px) {
@@ -1222,8 +1230,12 @@ span {
 		width: 30%;	
 	}
 
+	#registrate-button {
+		width: auto;
+	}
+
 	.registrate {
-		padding-right: 4.5%;
+		padding:0 2.2%;
 		width: 30%;
 	}
 
@@ -1244,6 +1256,17 @@ span {
 		width: 50%;
 	}
 
+	.part label {
+		width: 60%;
+	}
+
+	.part img {
+		min-width: 25px;
+	}
+
+	.label {
+		padding-left: 20%;
+	}
 	
 
 }
@@ -1277,7 +1300,10 @@ span {
 		font-size: 20px;
 	}
 
-	
+	.basket-part-button:nth-child(2) {
+		width: 80%;
+	}
+		
 }
 
 @media screen and (max-width: 690px) {
@@ -1294,6 +1320,11 @@ span {
 	.product {
 		font-size: 14px;
 	}
+
+	.method-headline {
+		margin-top: 0;
+	}
+
 
 
 
@@ -1330,6 +1361,44 @@ span {
 		display: inline-block;
 		width: 70%;
 		margin-bottom:10px ;
+	}
+
+	.wrapper-order-large,
+	.wrapper-order-short {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 5px ;
+	}
+
+	.wrapper-order {
+		margin-bottom: 5px;
+	}
+
+	.order-form	{
+		font-size: 16px;
+	}
+
+	.basket-img	{
+		width: 40%;
+	}
+
+	.basket-part-detail {
+		width: 50%;
+		margin-top: 30px;
+		margin-left: 40px;
+	}
+
+	.basket-part-number {
+		position: relative;
+		width: 	30%;	
+		left: 15%;
+	}
+
+	.basket-part-buttons {
+		position: relative;
+		width: 40%;
+		left: 20%;
+		text-align: right;
 	}
 
 }
@@ -1392,11 +1461,7 @@ span {
 		width: 50%;	
 	}
 
-	.registrate {
-		padding-right:11%;
-		width: 50%;
-	}
-
+	
 
 
 	.wrapper-registration-large {
@@ -1412,7 +1477,15 @@ span {
 	}
 
 
-	
+	.label {
+		padding-left: 5%;
+	}
+
+	.label,
+	.value {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
 
 }
 
@@ -1420,6 +1493,41 @@ span {
 @media screen and (max-width: 480px) {
 	.basic-filter-part {
 		width: 49%;
+	}
+
+	.basket-img	{
+		display: inline-block;
+		width: 70%;
+		margin-left: calc(100% - 35% - 50%);
+	}
+
+	.basket-part-detail {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.basket-part-number {
+		position: relative;
+		width: 	30%;	
+		left: 10%;
+	}
+
+	.basket-part-buttons {
+		position: relative;
+		width: 50%;
+		left: 15%;
+		text-align: right;
+	}
+
+	.basket-button {
+		width: 40%;
+		left: 50%;
+	}
+
+	.basket-headline {
+		font-size: 1em;
+		text-align: center;
 	}
 }
 
@@ -1446,6 +1554,14 @@ span {
 @media screen and (max-width: 360px) {
  .pre-footer {
 		width: 320px;
+	}
+
+	.login-button{
+		padding: 0;
+	}
+
+	.registrate {
+		padding: 0;
 	}
 
 }
